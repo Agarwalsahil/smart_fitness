@@ -190,10 +190,11 @@ class _CompleteProfileViewState extends State<CompleteProfileView> {
                           title: "Next >",
                           onPressed: () {
                             Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) =>
-                                        const WhatYourGoalView()));
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => WhatYourGoalView(),
+                              ),
+                            );
                           }),
                     ],
                   ),

@@ -6,7 +6,7 @@ import '../../common/colo_extension.dart';
 import '../../common_widget/round_button.dart';
 
 class WhatYourGoalView extends StatefulWidget {
-  const WhatYourGoalView({super.key});
+  WhatYourGoalView({super.key});
 
   @override
   State<WhatYourGoalView> createState() => _WhatYourGoalViewState();
@@ -134,10 +134,8 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                 RoundButton(
                   title: "Confirm",
                   onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const WelcomeView()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => WelcomeView()));
                   },
                 ),
               ],

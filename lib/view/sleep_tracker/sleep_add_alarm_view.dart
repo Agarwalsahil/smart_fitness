@@ -1,6 +1,6 @@
 import 'package:animated_toggle_switch/animated_toggle_switch.dart';
 import 'package:flutter/material.dart';
-import 'package:health_tracker/show_snack.dart';
+import 'package:health_tracker/common/show_snack.dart';
 import '../../common/colo_extension.dart';
 import '../../common_widget/icon_title_next_row.dart';
 import '../../common_widget/round_button.dart';

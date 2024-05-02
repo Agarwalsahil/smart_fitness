@@ -1,7 +1,7 @@
 import 'package:health_tracker/common/colo_extension.dart';
+import 'package:health_tracker/common/show_snack.dart';
 import 'package:health_tracker/common_widget/round_button.dart';
 import 'package:flutter/material.dart';
-import 'package:health_tracker/show_snack.dart';
 import 'package:readmore/readmore.dart';
 
 import '../../common_widget/food_step_detail_row.dart';

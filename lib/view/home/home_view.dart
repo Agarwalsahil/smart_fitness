@@ -1,6 +1,8 @@
 import 'package:dotted_dashed_line/dotted_dashed_line.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
+import 'package:health_tracker/bmi/screens/calculator_screen.dart';
 import 'package:health_tracker/common_widget/round_button.dart';
 import 'package:health_tracker/common_widget/workout_row.dart';
 import 'package:health_tracker/measure_heart_beat.dart';
@@ -14,7 +16,8 @@ import 'notification_view.dart';
 import 'dart:math';
 
 class HomeView extends StatefulWidget {
-  const HomeView({super.key});
+  HomeView(
+      {super.key});
 
   @override
   State<HomeView> createState() => _HomeViewState();
@@ -211,7 +214,15 @@ class _HomeViewState extends State<HomeView> {
                                       type: RoundButtonType.bgSGradient,
                                       fontSize: 12,
                                       fontWeight: FontWeight.w400,
-                                      onPressed: () {}))
+                                      onPressed: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const CalculatorScreen(),
+                                          ),
+                                        );
+                                      }))
                             ],
                           ),
                           AspectRatio(

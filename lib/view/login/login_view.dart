@@ -3,6 +3,7 @@ import 'package:health_tracker/common/colo_extension.dart';
 import 'package:health_tracker/common_widget/round_button.dart';
 import 'package:health_tracker/common_widget/round_textfield.dart';
 import 'package:health_tracker/view/login/complete_profile_view.dart';
+import 'package:health_tracker/view/login/signup_view.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -172,7 +173,10 @@ class _LoginViewState extends State<LoginView> {
                 ),
                 TextButton(
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const SignUpView()));
                   },
                   child: Row(
                     mainAxisSize: MainAxisSize.min,

@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:health_tracker/show_snack.dart';
+import 'package:health_tracker/common/show_snack.dart';
 
 import '../../common/colo_extension.dart';
 import '../../common/common.dart';
